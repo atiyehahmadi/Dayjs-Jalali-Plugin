@@ -3,7 +3,7 @@ import { PluginFunc, Dayjs } from 'dayjs';
 declare const plugin: PluginFunc;
 export = plugin;
 
-type CalendarType = 'jalali' | 'gregory';
+type CalendarType = 'jalali' | 'gregory' | 'hijri';
 
 declare module 'dayjs' {
   export function calendar(calendarType: CalendarType): Dayjs;
